@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entdecke, warum Alina zu den erfolgreichsten OnlyFans Creatorinnen Deutschlands gehört. ASMR, Rollenspiele & Fetisch-Content erwarten Dich.
+    ">
+  <title>Alina – OnlyFans erfolgreichste Frau?</title>
+  <style>
+    /* ================================= */
+    /* ==== CSS LENGKAP & TIDAK DIPOTONG ==== */
+    /* ================================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+      padding: 30px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 15px;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #888;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @keyframes gradientShift {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .main-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 20px 0 20px;
+    }
+
+    .content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    .results-count {
+      color: #888;
+      font-size: 1.1rem;
+    }
+
+    .sort-dropdown {
+      background: #1a1a2e;
+      border: 1px solid #333;
+      color: #ccc;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .sort-dropdown:focus {
+      outline: none;
+      border-color: #4ecdc4;
+    }
+
+    .creators-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
+      /* Diubah dari 60px */
+    }
+
+    .creator-card {
+      background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+      border: 1px solid #333;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+    }
+
+    .creator-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+      background-size: 300% 300%;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    .creator-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      border-color: #4ecdc4;
+    }
+
+    .rank-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      z-index: 2;
+    }
+
+    .creator-image {
+      height: 180px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .creator-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .creator-card:hover .creator-image img {
+      transform: scale(1.1);
+    }
+
+    .creator-info {
+      padding: 25px;
+    }
+
+    .creator-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .creator-category {
+      background: rgba(78, 205, 196, 0.2);
+      color: #4ecdc4;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      display: inline-block;
+      margin-bottom: 15px;
+      border: 1px solid rgba(78, 205, 196, 0.3);
+    }
+
+    .creator-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-number {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #4ecdc4;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 2px;
+    }
+
+    .creator-description {
+      color: #ccc;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .creator-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      background: rgba(255, 107, 107, 0.2);
+      color: #ff6b6b;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      border: 1px solid rgba(255, 107, 107, 0.3);
+    }
+
+    .creator-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      flex: 1;
+      font-size: 0.9rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .stars {
+      color: #ffd700;
+    }
+
+    .rating-text {
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      background: #1a1a2e;
+      border-top: 1px solid #333;
+      padding: 60px 0 30px;
+      margin-top: 80px;
+    }
+
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .copyright {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* --- CSS BAGIAN ARTIKEL --- */
+    .featured-article-section {
+      background: #111;
+      padding: 40px;
+      border-radius: 16px;
+      margin-bottom: 60px;
+      border: 1px solid #333;
+    }
+
+    .featured-article-section h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    .featured-article-section h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      color: #4ecdc4;
+      border-left: 4px solid #ff6b6b;
+      padding-left: 15px;
+    }
+
+    .featured-article-section h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #eee;
+    }
+
+    .featured-article-section p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    /* --- CSS GALERI Alina Photo --- */
+    .featured-photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 40px 0;
+    }
+
+    .featured-photo-gallery .gallery-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #333;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .featured-photo-gallery .gallery-image:hover {
+      transform: scale(1.05);
+      border-color: #4ecdc4;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .slider-navigation {
+      display: none;
+    }
+
+    .featured-cta-button {
+      display: block;
+      width: 100%;
+      padding: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 30px;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+
+    .featured-cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* --- CSS KEYWORD SEO --- */
+    .seo-keywords-section {
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 1px solid #222;
+      margin-top: 20px;
+    }
+
+    .seo-keywords-section h2 {
+      color: #888;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .seo-keywords-list {
+      color: #666;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    .seo-keywords-list a {
+      color: #666;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.3s;
+    }
+
+    .seo-keywords-list a:hover {
+      color: #4ecdc4;
+    }
+
+    /* ======================================= */
+    /* ==== CSS BARU UNTUK PAGINASI ==== */
+    /* ======================================= */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 60px;
+    }
+
+    .page-btn {
+      background: #1a1a2e;
+      border: 1px solid #333;
+      color: #ccc;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 500;
+    }
+
+    .page-btn:hover {
+      background: #4ecdc4;
+      border-color: #4ecdc4;
+      color: white;
+    }
+
+    .page-btn.active {
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      border-color: transparent;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .page-btn:disabled {
+      background: #111;
+      color: #555;
+      cursor: not-allowed;
+      border-color: #222;
+    }
+
+    /* ==== MEDIA QUERIES & MOBILE STYLES ==== */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .creators-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .featured-article-section h1 {
+        font-size: 2rem;
+      }
+
+      /* Gaya Slider untuk Mobile */
+      .featured-photo-gallery {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        height: 450px;
+      }
+
+      .featured-photo-gallery .gallery-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        pointer-events: none;
+      }
+
+      .featured-photo-gallery .gallery-image.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .slider-navigation {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        right: 10px;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+
+      .slider-btn {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .slider-btn:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+      <nav class="nav">
+        <div class="logo">🎬 BestOF</div>
+      </nav>
+      <div class="hero">
+        <h1>Top Deutschland Only Fans 2025</h1>
+        <p>Entdecken Sie die beliebtesten und einflussreichsten OnlyFans-Talente in Deutschland. Finden Sie Ihr
+          Lieblingstalent in
+          allen Kategorien.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="featured-article-section">
+      <h1>OnlyFans’ erfolgreichste Frau in Deutschland? Die bezaubernde Alina könnte es sein</h1>
+      <p>In der Welt der Erotik-Plattformen gibt es viele aufstrebende Stars, doch nur wenige schaffen es, sich
+        langfristig auf der Social Media Plattform OnlyFans durchzusetzen. Promis dominieren die Szene. Dabei sind es
+        gerade die echten, authentischen Mädchen von nebenan, die deutsche OF-Zuschauer besonders reizen.
+      </p>
+      <p>Das ist auch der Hauptgrund, warum eine der erfolgreichsten OnlyFans Creatorinnen Deutschlands eine nahbare,
+        natürliche Schönheit ist. Ihr Name ist Alina.</p>
+      <p>Die aufstrebende junge Creatorin begeistert seit 2021 ihre Fans mit hochwertigem Content und heißen Fotos aus
+        dem Alltag – und hebt sich dabei deutlich von anderen OnlyFans Models ab. </p>
+      <p>Doch was macht Alina so besonders? Warum zählt ihr Account zu den erfolgreichsten OnlyFans Accounts
+        Deutschlands? Wir werfen einen genaueren Blick auf ihren Erfolg und ihre Community.</p>
+      <div class="featured-photo-gallery" id="alina-gallery">
+        <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg" alt="Alina Photo 1"
+          class="gallery-image active">
+        <img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg" alt="Alina Photo 2"
+          class="gallery-image">
+        <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg" alt="Alina Photo 3"
+          class="gallery-image">
+        <img src="https://via.placeholder.com/400x550/96ceb4/ffffff?text=Alina+4" alt="Alina Photo 4"
+          class="gallery-image">
+        <img src="https://via.placeholder.com/400x550/1a1a2e/ffffff?text=Alina+5" alt="Alina Photo 5"
+          class="gallery-image">
+        <img src="https://via.placeholder.com/400x550/16213e/ffffff?text=Alina+6" alt="Alina Photo 6"
+          class="gallery-image">
+        <img src="https://via.placeholder.com/400x550/f0e68c/000000?text=Alina+7" alt="Alina Photo 7"
+          class="gallery-image">
+        <img src="https://via.placeholder.com/400x550/333333/ffffff?text=Alina+8" alt="Alina Photo 8"
+          class="gallery-image">
+        <div class="slider-navigation">
+          <button id="prev-btn" class="slider-btn">❮</button>
+          <button id="next-btn" class="slider-btn">❯</button>
+        </div>
+      </div>
+      <h2>Alinas Erfolgsrezept: mit Passion bei der Sache</h2>
+      <p>Viele OnlyFans Models sind auf der Plattform vor allen Dingen wegen einer Sache aktiv: Geld. Sicherlich ist das
+        ein attraktiver Grund, eine OF-Karriere zu starten. Doch wer wirklich erfolgreich sein möchte, tut was, was
+        seine Passion ist. Und Alinas Passion ist nunmal das Modeln. Gerne auch freizügig. Sie fühlt sich eben wohl in
+        ihrer Haut. Und das sieht und spürt man. Sie liebt einfach, was sie tut.
+      </p>
+      <p>Und sie liebt noch etwas: Den direkten Kontakt zu ihrer Community!</p>
+      <p>Manche OnlyFans Creators setzen auf ein Management, das für sie die gesamte Chat-Kommunikation übernimmt. Nicht
+        so bei Alina. Sie ist eine der wenigen Creatorinnen, die ihre OnlyFans Abonnenten noch persönlich betreut. Jeder
+        Kommentar, jede Nachricht und jedes individuelle Video kommt direkt von ihr. So entstehen echte, enge
+        Verbindungen. </p>
+      <p>Doch es ist nicht nur die persönliche Note, die Alina zum Platz 1 der erfolgreichsten OnlyFans Creators
+        Deutschlands macht. Ihr Content hebt sich vor allem durch eine exzellente Audio- und Videoqualität ab. Besonders
+        ihre ASMR-, Rollenspiel- und Fetisch-Videos haben auf Plattformen wie Reddit und Pornhub Millionen Klicks
+        gesammelt. Ihre Teaser tauchen regelmäßig in den Top 10 der For You Page Deutschland auf.</p>
+      <h2>Erfolgreichste OnlyFans Accounts haben alles: ASMR, Fetisch und mehr</h2>
+      <p>Warum hat Alina einen der erfolgreichsten OnlyFans Accounts Deutschlands?
+      </p>
+      <p>Unter anderem, weil ihr Angebot auf OnlyFans vielfältig ist. Mit mehr als 250 Videos, die eine Länge von 10 bis
+        40 Minuten haben, ist die 'German Goddess' eine aktive Creatorin, die ihre treuen Fans und Follower niemals im
+        Stich lässt – und ihnen genau das gibt, was sie sich wünschen. Nämlich...
+      </p>
+      <h3>ASMR-Content</h3>
+      <p>ASMR (Autonomous Sensory Meridian Response) ist eines der beliebtesten Genres auf OnlyFans. Alina hat diese
+        Nische für sich perfektioniert. Sie kombiniert hochwertige Audioaufnahmen mit visuell ansprechenden
+        Close-up-Videos. Ihre sanfte Stimme, das Flüstern und das Geräuschespiel sorgen bei ihren Fans für eine
+        besonders intensive Erfahrung. </p>
+      <p>Die Mitte 20-Jährige nutzt verschiedene ASMR-Techniken, darunter sanftes Streichen über die Haut, taktile
+        Geräusche mit unterschiedlichen Objekten und geflüsterte Rollenspiele, um die Zuschauer in eine tiefgehende
+        Entspannung (und zugleich sexuelle Erregung) zu versetzen.
+      </p>
+      <p>Durch ihre professionelle Audioqualität hebt sie sich von vielen anderen ASMR-Creators ab und bietet ein
+        immersives Erlebnis, das in der Welt der Erotik-Plattformen einzigartig ist.
+      </p>
+      <h3>Rollenspiele</h3>
+      <p>Wer träumt nicht einmal davon, eine Schülerin zu züchtigen? Klassiker wie Lehrer-Schülerin, Chef-Sekretärin
+        oder andere Fantasien sind Dauerbrenner bei Alina.
+      </p>
+      <p>Das Erotik-Model investiert viel Zeit in die Ausarbeitung von authentischen Szenarien, die ihre Fans in ihre
+        Fantasiewelt eintauchen lassen und lässt gerne mal einen Morgengruß im unschuldigen und zugleich erotischen
+        Schulmädchen-Outfit da.
+      </p>
+      <h3>Fetisch-Inhalte</h3>
+      <p>Von Domina/Mistress über Cuckolding bis hin zu Feet Fetish – Alina ist für alles offen. Sie nimmt sich die
+        Zeit, Wünsche ihrer Fans zu verstehen und bietet maßgeschneiderten Content an, der speziell auf alle Bedürfnisse
+        zugeschnitten ist. Dadurch hat sie sich eine breite und loyale Fangemeinde aufgebaut.
+      </p>
+      <p>Neugierig? Im privaten OF-Chat kannst Du jederzeit individuelle Inhalte von Alina anfragen. Sie erfüllt Dir
+        gerne Deine Wünsche.
+      </p>
+      <h3>Custom-Videos</h3>
+      <p>Nicht nur bei Fetisch-Inhalten ist Alina offen. Sie erfüllt generell gerne die Wünsche ihrer Community? Dir
+        schwebt eine bestimmte sinnliche Szenerie vor? Alina geht gerne gezielt auf Deine Wünsche ein und produziert
+        personalisierten Content. Extra für Dich!
+      </p>
+      <p>Übrigens: Alina bietet auch regelmäßige Livestreams an, in denen sie mit ihrer Community interagiert.
+      </p>
+      <h3>Exklusive Behind-the-Scenes-Clips
+      </h3>
+      <p>Hochglanz, übertriebene Fotobearbeitung und Fakes suchst Du bei Alina vergebens. Sie ist und bleibt
+        authentisch. In ihren Videos, Bildern und auch in ihren privaten Chat-Nachrichten.
+      </p>
+      <p>Deshalb nimmt die OF-Cretorin ihre Fans gerne auch mal mit hinter die Kulissen ihrer Produktionen. So bist auch
+        Du Teil ihres kreativen Prozesses
+      </p>
+      <h2>Ein gigantisches Video-Archiv mit über 250 Videos</h2>
+      <p>Jede Woche nur ein Foto? Nein! Bei Alina bekommst Du wirklich viel Content. Das unterscheidet sie von anderen
+        OnlyFans Creatorinnen: die schiere Menge an Bildern und Videos, die sie für ihre Abonnenten produziert.
+      </p>
+      <p>Mittlerweile zählt ihre Videobibliothek über 250 Videos. Damit bietet sie für jeden Geschmack und jede Vorliebe
+        das passende Material. Ihr Portfolio deckt sämtliche Kategorien ab, von intimen ASMR-Sessions über aufwendige
+        Rollenspiele bis hin zu spezialisierten Fetisch-Videos.
+      </p>
+      <p>Alina legt großen Wert darauf, dass ihr Content sowohl qualitativ als auch quantitativ überzeugt. Sie gibt
+        ihren Fans das Gefühl, tief in die Szene eintauchen zu können.
+      </p>
+      <p>Dank ihrer hohen Veröffentlichungsrate gibt es auf ihrem Account ständig neue Inhalte zu entdecken – und das zu
+        einem besonders günstigen Preis. Das Abo beginnt bei weniger als 8 Dollar (zzgl. Steuern).
+      </p>
+      <h2>Das Herzstück ihres Schaffens: Alinas Community</h2>
+      <p>Die Mehrheit von Alinas Followern sind Männer im Alter von 25 bis 45 Jahren, aber auch jüngere und ältere
+        Abonnenten sind vertreten.
+      </p>
+      <p>Die Vorlieben der Fans sind breit gefächert, doch vor allem ASMR, Rollenspiele und Fetisch-Themen stehen hoch
+        im Kurs. Ein weiterer Grund für Alinas Popularität: Sie bietet hochwertigen Content zu günstigen Preisen an, da
+        sie ihre Arbeit aus Spaß und Leidenschaft macht.
+      </p>
+      <p>Ihre Fans schätzen besonders, dass sie auf ihre Wünsche eingeht und individuellen Content erstellt.
+      </p>
+      <h2>Deshalb gehört Alina zu den erfolgreichsten OnlyFans Creatorinnen </h2>
+      <p>Es gibt viele OnlyFans Models, doch nur wenige schaffen es, sich langfristig an der Spitze zu halten. Alinas
+        Erfolgsgeheimnis ist ihre Echtheit und Nähe zu den Fans – ein Erfolgsrezept, das zum Folgen und Bleiben
+        animiert.
+      </p>
+      <p>Ihr Account ist nicht nur einer von vielen auf der Plattform OnlyFans, sondern eine Erlebniswelt für ihre
+        Community. Mit ihrem vielfältigen Content, ihrer hochwertigen Produktion und ihrer direkten Fan-Interaktion
+        setzt sie Maßstäbe in der Branche.
+      </p>
+      <p>Für alle, die sich für die erfolgreichsten OnlyFans Creator Deutschlands interessieren oder einen Blick hinter
+        die Kulissen der Erotik-Plattform werfen wollen, ist Alinas Profil definitiv einen Besuch wert! Schau also gerne
+        vorbei und lerne den Menschen Alina persönlich im Chat kennen. Hier lässt sich ebenfalls gerne die Hüllen für
+        Dich fallen.
+      </p>
+      <h2>FAQs – Häufig gestellte Fragen zu Alina und ihrem OnlyFans-Account</h2>
+      <h3>Was kostet das Abonnement von Alina auf OnlyFans?
+      </h3>
+      <p>Alinas OnlyFans-Account bietet verschiedene Preisoptionen, abhängig von der Dauer des Abonnements und
+        speziellen Angeboten. Ab 8 Dollar pro Monat kannst Du all ihre prickelnden Inhalte sehen.</p>
+      <h3>Antwortet Alina persönlich auf Nachrichten?</h3>
+      <p>Ja! Im Gegensatz zu vielen anderen Creatorinnen beantwortet Alina ihre Nachrichten selbst und interagiert aktiv
+        mit ihren Fans. Das macht sie zu einem besonderen Influencer.</p>
+      <h3>Welche Art von Inhalten veröffentlicht Alina?</h3>
+      <p>Alina bietet ASMR, Rollenspiele, Fetisch-Videos, Custom-Content, Behind-the-Scenes-Clips und Live-Sessions an.
+        Dabei geht sie deutlich weiter, als sie es etwa auf Plattformen wie Instagram tun könnte.</p>
+      <h3>Wie oft postet Alina neue Inhalte?</h3>
+      <p>Alina veröffentlicht täglich neue Videos oder Bilder. Dank ihrer hohen Content-Rate gibt es immer wieder
+        frischen Content für ihre Fans.</p>
+      <h3>Gibt es personalisierte Videos auf Anfrage?</h3>
+      <p>Ja, Alina bietet individuelle Custom-Videos an, die speziell auf die Wünsche ihrer Abonnenten zugeschnitten
+        sind. Sie ist nicht umsonst mit die erfolgreichste OnlyFans Creatorin in Deutschland.
+      </p>
+
+
+
+      <a href="https://onlyfans.com/goddessalina" target="_blank" class="featured-cta-button">Visit Alina's Profile
+        Now!</a>
+    </section>
+
+    <!-- ==== BAGIAN KARTU MODEL TOP ==== -->
+    <div class="content-header">
+      <div class="results-count" id="results-count-text"></div>
+      <select class="sort-dropdown" id="sort-dropdown">
+        <option value="rank">Sort by: Rank</option>
+        <option value="subscribers">Sort by: Subscribers</option>
+        <option value="views">Sort by: Views</option>
+      </select>
+    </div>
+
+    <div class="creators-grid" id="creators-grid">
+      <!-- Kartu Model akan dirender oleh JS di sini -->
+    </div>
+
+    <!-- ============================================= -->
+    <!-- ==== KONTENER BARU UNTUK TOMBOL PAGINASI ==== -->
+    <!-- ============================================= -->
+    <div class="pagination" id="pagination-container">
+      <!-- Tombol paginasi akan dirender oleh JS di sini -->
+    </div>
+
+    <!-- ==== BAGIAN KEYWORD SEO ==== -->
+    <section class="seo-keywords-section">
+      <h2>Weitere Top-Models in Deutschland</h2>
+      <p class="seo-keywords-list">
+        <a href="#">Gina Wild</a>, <a href="#">Micaela Schäfer</a>, <a href="#">Lexy Roxx</a>, <a href="#">Katja
+          Krasavice</a>, <a href="#">Anike Ekina</a>, <a href="#">Julia Römmelt</a>, <a href="#">Martina Big</a>, <a
+          href="#">Lena Nitro</a>, <a href="#">Jana Bach</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="copyright">
+        <p>&copy; All rights reserved. Made with ❤️ for onlyfans creators.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ======================================
+    // ==== DATA MODEL (DIPERBANYAK JADI 50) ====
+    // ======================================
+    const modelData = [];
+    const baseModels = [
+      { name: "Alina ✨", category: "Solo", subs: 2520, views: 3100, rating: 4.9, tags: ["ASMR", "Roleplay", "Fetish"], image: "https://via.placeholder.com/320x180/ff6b6b/fff" },
+      { name: "Mary Haze❤️‍🔥", category: "Solo", subs: 2450, views: 2800, rating: 4.6, tags: ["Gaming", "Solo", "Tutorial"], image: "https://via.placeholder.com/320x180/4ecdc4/fff" },
+      { name: "Lana", category: "Couple", subs: 2280, views: 4200, rating: 4.9, tags: ["Challenge", "Family", "Couple"], image: "https://via.placeholder.com/320x180/45b7d1/fff" },
+      { name: "Dani Day", category: "Couple", subs: 2120, views: 2100, rating: 4.7, tags: ["Podcast", "Interview", "Talk Show"], image: "https://via.placeholder.com/320x180/96ceb4/fff" },
+      { name: "Rina Roxx", category: "Couple", subs: 2080, views: 1900, rating: 4.5, tags: ["Family", "Music", "Dance"], image: "https://via.placeholder.com/320x180/f8b195/fff" },
+      { name: "Sheena Anaya", category: "Cooking", subs: 1930, views: 1700, rating: 4.8, tags: ["Cooking", "Sketch", "Humor"], image: "https://via.placeholder.com/320x180/f67280/fff" },
+      { name: "Dea Rose", category: "Vlog", subs: 1810, views: 1500, rating: 4.9, tags: ["Vlog", "Traveling", "Humor"], image: "https://via.placeholder.com/320x180/c06c84/fff" },
+      { name: "Danii Banks", category: "Solo", subs: 1750, views: 1800, rating: 4.6, tags: ["Solo", "Horror", "Reaction"], image: "https://via.placeholder.com/320x180/6c5b7b/fff" },
+      { name: "Mika Ami", category: "Lifestyle", subs: 1680, views: 1400, rating: 4.7, tags: ["Lifestyle", "Business", "Inspiration"], image: "https://via.placeholder.com/320x180/355c7d/fff" },
+      { name: "Addy Fox", category: "Solo", subs: 1590, views: 1600, rating: 4.4, tags: ["Mobile Solo", "MLBB", "Strategy"], image: "https://via.placeholder.com/320x180/2a363b/fff" },
+    ];
+
+    for (let i = 0; i < 50; i++) {
+      const base = baseModels[i % baseModels.length];
+      modelData.push({
+        id: i + 1,
+        name: `${base.name}${i >= baseModels.length ? ' ' + (Math.floor(i / baseModels.length) + 1) : ''}`,
+        category: base.category,
+        subscribers: (base.subs - i * 15) * 10000,
+        views: (base.views - i * 20) * 1000000,
+        rating: (base.rating - (i % 5) * 0.1).toFixed(1),
+        reviews: 2000 - i * 25,
+        description: `Welcome to the profile of ${base.name}. Discover exclusive content and much more.`,
+        tags: base.tags,
+        image: base.image,
+        channelUrl: "#"
+      });
+    }
+
+    const onlyfansrs = modelData;
+    let currentSort = 'rank';
+    let filteredonlyfansrs = [...onlyfansrs];
+
+    // ===================================
+    // ==== VARIABEL BARU UNTUK PAGINASI ====
+    // ===================================
+    let currentPage = 1;
+    let itemsPerPage = 12;
+
+    // --- Helper Functions (Sama seperti sebelumnya) ---
+    function formatNumber(num) { if (num >= 1000000000) return (num / 1000000000).toFixed(1) + 'B'; if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M'; if (num >= 1000) return (num / 1000).toFixed(1) + 'K'; return num.toString(); }
+    function generateStars(rating) { const fullStars = Math.floor(rating); return '★'.repeat(fullStars) + '☆'.repeat(5 - fullStars); }
+
+    function renderonlyfansr(onlyfansr, rank) {
+      return `
+        <div class="creator-card">
+            <div class="rank-badge">#${rank}</div>
+            <div class="creator-image"><img src="${onlyfansr.image}" alt="${onlyfansr.name}" loading="lazy"></div>
+            <div class="creator-info">
+                <h3 class="creator-name">${onlyfansr.name}</h3>
+                <span class="creator-category">${onlyfansr.category}</span>
+                <div class="rating"><span class="stars">${generateStars(onlyfansr.rating)}</span><span class="rating-text">${onlyfansr.rating} (${formatNumber(onlyfansr.reviews)} reviews)</span></div>
+                <div class="creator-stats">
+                    <div class="stat-box"><div class="stat-number">${formatNumber(onlyfansr.subscribers)}</div><div class="stat-label">Subscribers</div></div>
+                    <div class="stat-box"><div class="stat-number">${formatNumber(onlyfansr.views)}</div><div class="stat-label">Total Views</div></div>
+                </div>
+                <p class="creator-description">${onlyfansr.description}</p>
+                <div class="creator-actions"><a href="${onlyfansr.channelUrl}" target="_blank" class="btn-primary">Visit Channel</a></div>
+            </div>
+        </div>`;
+    }
+
+    // ===============================================
+    // ==== FUNGSI RENDER UTAMA (DENGAN LOGIKA PAGINASI) ====
+    // ===============================================
+    function renderonlyfansrs() {
+      const grid = document.getElementById('creators-grid');
+      const resultCountText = document.getElementById('results-count-text');
+      grid.innerHTML = ''; // Kosongkan grid sebelum render
+
+      // Logika untuk memotong data sesuai halaman
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      const paginatedItems = filteredonlyfansrs.slice(startIndex, endIndex);
+
+      // Render item untuk halaman ini
+      paginatedItems.forEach((model, index) => {
+        const rank = startIndex + index + 1; // Kalkulasi rank global
+        grid.innerHTML += renderonlyfansr(model, rank);
+      });
+
+      // Update teks jumlah hasil
+      resultCountText.textContent = `Showing results ${startIndex + 1}-${Math.min(endIndex, filteredonlyfansrs.length)} of ${filteredonlyfansrs.length}`;
+
+      // Setup tombol paginasi setelah render
+      setupPagination();
+    }
+
+    // ===============================================
+    // ==== FUNGSI BARU UNTUK MEMBUAT TOMBOL PAGINASI ====
+    // ===============================================
+    function setupPagination() {
+      const paginationContainer = document.getElementById('pagination-container');
+      paginationContainer.innerHTML = '';
+      const pageCount = Math.ceil(filteredonlyfansrs.length / itemsPerPage);
+
+      if (pageCount <= 1) return; // Tidak perlu paginasi jika hanya 1 halaman
+
+      // Tombol "Previous"
+      const prevButton = document.createElement('button');
+      prevButton.classList.add('page-btn');
+      prevButton.innerText = '← Prev';
+      prevButton.disabled = currentPage === 1;
+      prevButton.addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderonlyfansrs();
+        }
+      });
+      paginationContainer.appendChild(prevButton);
+
+      // Tombol Angka Halaman
+      for (let i = 1; i <= pageCount; i++) {
+        const pageButton = document.createElement('button');
+        pageButton.classList.add('page-btn');
+        pageButton.innerText = i;
+        if (i === currentPage) {
+          pageButton.classList.add('active');
+        }
+        pageButton.addEventListener('click', () => {
+          currentPage = i;
+          renderonlyfansrs();
+        });
+        paginationContainer.appendChild(pageButton);
+      }
+
+      // Tombol "Next"
+      const nextButton = document.createElement('button');
+      nextButton.classList.add('page-btn');
+      nextButton.innerText = 'Next →';
+      nextButton.disabled = currentPage === pageCount;
+      nextButton.addEventListener('click', () => {
+        if (currentPage < pageCount) {
+          currentPage++;
+          renderonlyfansrs();
+        }
+      });
+      paginationContainer.appendChild(nextButton);
+    }
+
+    function sortonlyfansrs(sortBy) {
+      currentSort = sortBy;
+      filteredonlyfansrs.sort((a, b) => {
+        if (sortBy === 'rank') return a.id - b.id;
+        if (sortBy === 'subscribers') return b.subscribers - a.subscribers;
+        if (sortBy === 'views') return b.views - a.views;
+        return 0;
+      });
+      // RESET ke halaman 1 setiap kali sorting
+      currentPage = 1;
+      renderonlyfansrs();
+    }
+
+    // ==== Event Listeners ====
+    document.addEventListener('DOMContentLoaded', () => {
+      // Inisialisasi Slider Alina
+      const gallery = document.getElementById('alina-gallery');
+      const images = gallery.querySelectorAll('.gallery-image');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      let currentIndex = 0;
+      function showImage(index) { images.forEach(img => img.classList.remove('active')); images[index].classList.add('active'); }
+      nextBtn.addEventListener('click', () => { currentIndex = (currentIndex + 1) % images.length; showImage(currentIndex); });
+      prevBtn.addEventListener('click', () => { currentIndex = (currentIndex - 1 + images.length) % images.length; showImage(currentIndex); });
+      showImage(0);
+
+      // Inisialisasi daftar model
+      document.getElementById('sort-dropdown').addEventListener('change', (e) => sortonlyfansrs(e.target.value));
+      sortonlyfansrs('rank'); // Tampilkan data awal diurutkan berdasarkan rank
+    });
+  </script>
+</body>
+
+</html>
